@@ -1,0 +1,6 @@
+.product-card { transition: transform .25s ease, box-shadow .25s ease; }
+.product-card:hover, .product-card:focus-within { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(20, 35, 58, .12); }
+.product-image-link { position: relative; }
+.product-image-link::after { content: 'Preview item'; position: absolute; left: 12px; bottom: 12px; padding: 7px 9px; color: #fff; background: rgba(0, 53, 107, .88); font: 9px var(--mono); letter-spacing: .06em; text-transform: uppercase; opacity: 0; transform: translateY(5px); transition: opacity .25s ease, transform .25s ease; }
+.product-image-link:hover::after, .product-image-link:focus-visible::after { opacity: 1; transform: translateY(0); }
+.product-card:focus-within { outline: 2px solid var(--gold); outline-offset: 3px; }

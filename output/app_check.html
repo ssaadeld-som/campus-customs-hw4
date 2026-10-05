@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs — App Check</title>
+  <style>
+    :root { font-family: Arial, sans-serif; color: #14233a; background: #f7f7f3; }
+    body { margin: 0; }
+    main { max-width: 1050px; margin: 0 auto; padding: 48px 24px; }
+    header { border-left: 5px solid #c6a15b; padding-left: 18px; margin-bottom: 36px; }
+    h1, h2 { color: #00356b; } h1 { margin: 0 0 10px; }
+    .check { background: #fff; border: 1px solid #d9d8d1; margin: 22px 0; padding: 24px; }
+    .check h2 { margin-top: 0; } .caption { color: #526176; line-height: 1.55; }
+    img { display: block; width: 100%; max-width: 900px; margin-top: 18px; border: 1px solid #d9d8d1; background: #eef4f8; }
+    .status { font-weight: bold; color: #00356b; }
+    code { background: #eef4f8; padding: 2px 5px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Campus Customs — App Check</h1>
+      <p>Local test URL: <code>http://127.0.0.1:5174</code></p>
+      <p>Each screenshot below is linked with a relative path for grading.</p>
+    </header>
+
+    <section class="check">
+      <h2>1. Chat inventory lookup</h2>
+      <p class="caption"><span class="status">Test:</span> Ask the chat for the price and stock by size of a product, such as “What sizes does the Basic Hoodie Big Yale have?”</p>
+      <p class="caption"><span class="status">Expected:</span> The assistant reports the database-backed description, price, and size-level quantities.</p>
+      <img src="app_check_images/inventory.png" alt="Screenshot of a chat inventory lookup">
+    </section>
+
+    <section class="check">
+      <h2>2. Dynamic search-result cards</h2>
+      <p class="caption"><span class="status">Test:</span> Ask the chat to show a category, such as “Show me Yale crewneck sweatshirts.”</p>
+      <p class="caption"><span class="status">Expected:</span> The normal Products grid immediately filters to matching cards, retains its product filters and pagination, and each card links to the full product-detail page.</p>
+      <img src="app_check_images/search_results.png" alt="Screenshot of dynamic chat search result cards">
+    </section>
+
+    <section class="check">
+      <h2>3. Usability improvement: size chart</h2>
+      <p class="caption"><span class="status">Test:</span> Open any product card and scroll to the Fit Guide.</p>
+      <p class="caption"><span class="status">Expected:</span> Youth, Women, and Men standard size tables remain readable and label chest/bust, waist, and hip in inches (in.).</p>
+      <img src="app_check_images/size_chart.png" alt="Screenshot of the segment-aware size chart">
+    </section>
+  </main>
+</body>
+</html>

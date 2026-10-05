@@ -1,0 +1,17 @@
+.catalogue-filters { display: grid; grid-template-columns: 1.28fr repeat(5, minmax(0, 1fr)); gap: 12px; padding: 18px; margin-bottom: 24px; background: #eef4f8; border: 1px solid #cbdde9; box-shadow: 0 12px 24px rgba(0, 53, 107, .05); }
+.filter-intro { display: grid; align-content: center; gap: 5px; padding: 4px 9px 4px 2px; color: var(--navy); }
+.filter-intro strong { font-size: 13px; letter-spacing: -.025em; }
+.filter-intro span { color: var(--muted); font-size: 10px; line-height: 1.4; }
+.catalogue-filters label { display: grid; gap: 7px; color: var(--muted); font: 600 10px var(--mono); letter-spacing: .07em; text-transform: uppercase; }
+.catalogue-filters select { width: 100%; padding: 10px; color: var(--ink); background: #fff; border: 1px solid var(--line); font: 500 12px var(--mono); border-radius: 2px; }
+.catalogue-filters select:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+.chat-search-summary { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 16px 19px; margin: 0 0 14px; color: #fff; background: var(--navy); border-left: 4px solid var(--gold); }
+.chat-search-summary .eyebrow { margin: 0 0 4px; color: #f7d78d; }
+.chat-search-summary strong { font-size: 13px; }
+.chat-search-summary button { padding: 8px 10px; color: var(--navy); background: #fff; border: 0; font: 700 10px var(--mono); cursor: pointer; white-space: nowrap; }
+.pagination { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px; margin-top: 34px; }
+.pagination button { min-width: 35px; padding: 9px 11px; color: var(--navy); background: #fff; border: 1px solid var(--line); font: 600 11px var(--mono); cursor: pointer; }
+.pagination button.current { color: #fff; background: var(--navy); border-color: var(--navy); }
+.pagination button:disabled { opacity: .4; cursor: not-allowed; }
+@media (max-width: 1100px) { .catalogue-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); } .filter-intro { grid-column: span 3; } }
+@media (max-width: 560px) { .catalogue-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } .filter-intro { grid-column: span 2; } .chat-search-summary { align-items: flex-start; flex-direction: column; } }

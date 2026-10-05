@@ -1,0 +1,5 @@
+.form-note a { color: var(--navy); font-weight: 700; }
+.form-status { padding: 11px 12px; margin: 0; font-size: 12px; line-height: 1.5; }
+.form-status.error { background: #fff0ee; border-left: 3px solid #b42318; color: #8c1c13; }
+.form-status.success { background: #e8f4ec; border-left: 3px solid #28734d; color: #1c5d3b; }
+.account-form button:disabled { opacity: .65; cursor: wait; }

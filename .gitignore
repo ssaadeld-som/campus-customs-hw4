@@ -1,0 +1,13 @@
+.venv/
+data/
+data.zip
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+**/*.db
+**/products/
+output/*.invalid.json

@@ -1,0 +1,14 @@
+.size-chart { margin-top: 85px; padding-top: 52px; border-top: 1px solid var(--line); display: grid; grid-template-columns: .7fr 1.3fr; gap: 50px; }
+.size-chart h2 { margin: 0 0 13px; font: 400 clamp(28px, 3vw, 42px)/1.2 var(--serif); letter-spacing: -.04em; }
+.size-chart > div:first-child > p:not(.eyebrow) { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.size-chart-tables { display: grid; gap: 25px; }
+.size-chart-tables h3 { margin: 0 0 9px; font: 600 15px var(--serif); }
+.size-chart table { width: 100%; border-collapse: collapse; background: #fff; font: 10px var(--mono); }
+.size-chart th, .size-chart td { padding: 10px; border: 1px solid var(--line); text-align: left; }
+.size-chart th { color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .06em; }
+.notify-form { margin-top: 25px; padding: 18px; background: #eef4f8; display: grid; gap: 10px; }
+.notify-form .eyebrow { margin-bottom: 0; }
+.notify-form > p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.notify-form select, .notify-form input { padding: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); font-size: 12px; }
+.notify-form .button { justify-content: center; padding: 11px; }
+@media (max-width: 780px) { .size-chart { grid-template-columns: 1fr; gap: 28px; } .size-chart-tables { overflow-x: auto; } .size-chart table { min-width: 440px; } }
